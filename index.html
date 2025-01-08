@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IZERIMANA Adeline</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+     .about-section {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+    }
+    .about-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .about-img {
+      max-width: 100%;
+      height: 70vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+    .about-text strong {
+      color: #0d6efd; /* Bootstrap primary color */
+    }
+
+    .journey-section {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+    }
+    .journey-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .journey-item {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .journey-item button {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background-color: #0d6efd; /* Bootstrap primary color */
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .journey-item button:hover {
+      background-color: #0b5ed7;
+    }
+    .journey-item p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      margin: 0;
+    }
+    .skills-section {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+    .skills-section p {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .skill-row {
+      background-color: rgba(128, 128, 128, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100px;
+    }
+    .skill-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .skill-item span {
+      font-size: 1rem;
+      color: #555;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .achievement-section {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+    .achievement-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .achievement-item {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .achievement-item img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .achievement-item p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0;
+    }
+</style>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-white p-3 mb-3 shadow-lg border">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary h1" href="javascript:void(0)"> I<span style="color: grey;">A</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="javascript:void(0)">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="javascript:void(0)">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="javascript:void(0)">Cerfificates</a>
+          </li>
+      </ul>
+      
+        
+        <button class="btn btn-primary" type="button">Contact Me</button>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- home -->
+<div style="
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('img/adeline.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;">
+  
+  <span style="color: #b3b3b3; font-size: 1.2rem; letter-spacing: 1px;">Hi, I am</span>
+  
+  <h2 style="color: #ffffff; font-size: 2.5rem; margin: 10px 0; font-weight: bold;">IZERIMANA Adeline</h2>
+  
+  <p style="
+    color: #dcdcdc; 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    max-width: 600px; 
+    margin: 10px auto;">
+    Full Stack Developer, <br> Web Designer, <br> Front-End Developer, Back-End Developer.
+  </p>
+  <button class="btn btn-secondary" type="button">Download CV</button>
+</div>
+<div class="about-section">
+    <div class="container">
+      <h1 class="text-center">About Me</h1>
+      <div class="row align-items-center">
+        <!-- Image Section -->
+        <div class="col-md-5">
+          <img src="img/12.JPG" alt="IZERIMANA Adeline" class="about-img img-fluid">
+        </div>
+        <!-- Text Section -->
+        <div class="col-md-7">
+          <div class="about-text">
+            <p>
+              <strong>Hi, I'm IZERIMANA Adeline</strong>, a passionate web developer specializing in 
+              front-end and back-end development. I enjoy turning complex problems into simple, beautiful, and 
+              intuitive solutions. I have skills with technologies like <strong>JavaScript</strong>, <strong>Python</strong>, 
+              <strong>PHP</strong>, <strong>C</strong>, <strong>C++</strong>, and <strong>MySQL</strong>.
+            </p>
+            <p>
+              I believe that web development is not just about coding but also about creating seamless user 
+              experiences and solving societal problems. When I'm not coding, you'll find me reading. 
+              If you're seeking a passionate and innovative developer for your project or company, feel free 
+              to <strong>Contact Me</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="journey-section">
+    <div class="container">
+      <h1>Coding Journey</h1>
+      <!-- 2022 -->
+      <div class="journey-item">
+        <button>2022</button>
+        <p>In this year, I started coding where I used <strong>HTML</strong>, <strong>C</strong>, and <strong>CSS</strong> to develop and design websites.</p>
+      </div>
+      <!-- 2023 -->
+      <div class="journey-item">
+        <button>2023</button>
+        <p>In this year, I expanded my knowledge by learning <strong>C</strong>, <strong>C++</strong>, and <strong>Python</strong>.</p>
+      </div>
+      <!-- 2024 -->
+      <div class="journey-item">
+        <button>2024</button>
+        <p>In this year, I improved my skills further, started building advanced projects, and focused on back-end development using <strong>PHP</strong> and <strong>MySQL</strong>.</p>
+      </div>
+      <!-- 2025 -->
+      <div class="journey-item">
+        <button>2025</button>
+        <p>In this year, I am honing my expertise as a <strong>full-stack developer</strong>, integrating advanced front-end frameworks like <strong>React</strong> and diving deeper into database management and API development.</p>
+      </div>
+      <!-- Future -->
+      <div class="journey-item">
+        <button>Future</button>
+        <p>Looking ahead, I aim to explore cutting-edge technologies such as <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Cloud Computing</strong> to develop solutions that have a global impact.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <div class="container">
+      <p>My Skills</p>
+      
+      <!-- Frontend Skills -->
+      <div class="skill-row">
+        <div class="skill-item">
+          <img src="img/html.png" alt="HTML">
+          <span>HTML</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/css-3.png" alt="CSS">
+          <span>CSS</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/js.png" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+      </div>
+      
+      <!-- Backend Skills -->
+      <div class="skill-row">
+        <div class="skill-item">
+          <img src="img/php.png" alt="PHP">
+          <span>PHP</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/mysql.png" alt="MySQL">
+          <span>MySQL</span>
+        </div>
+      </div>
+      
+      <!-- Programming Skills -->
+      <div class="skill-row">
+        <div class="skill-item">
+          <img src="img/c.png" alt="C">
+          <span>C</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/cpp.png" alt="C++">
+          <span>C++</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/python.jpeg" alt="Python">
+          <span>Python</span>
+        </div>
+      </div>
+      
+      <!-- Additional Skills -->
+      <!-- <div class="skill-row">
+        <div class="skill-item">
+          <img src="img/react.png" alt="React">
+          <span>React</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/nodejs.png" alt="Node.js">
+          <span>Node.js</span>
+        </div>
+        <div class="skill-item">
+          <img src="img/github.png" alt="GitHub">
+          <span>GitHub</span>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="achievement-section">
+    <div class="container">
+      <h1>Achievements and Certifications</h1>
+      <div class="achievement-grid">
+        <!-- Achievement 1 -->
+        <div class="achievement-item">
+          <img src="img/python g.jpg" alt="Python Certification">
+          <p>Python Certification from Great Learning</p>
+        </div>
+        <!-- Achievement 2 -->
+        <div class="achievement-item">
+          <img src="img/html g.png" alt="HTML Certification">
+          <p>HTML Certification from Sololearn</p>
+        </div>
+        <!-- Achievement 3 -->
+        <div class="achievement-item">
+          <img src="img/php g.jpg" alt="PHP Certification">
+          <p>PHP Certification from Great Learning</p>
+        </div>
+        <!-- Achievement 4 -->
+        <div class="achievement-item">
+          <img src="img/css g.jpg" alt="CSS Certification">
+          <p>CSS Certification from Great Learning</p>
+        </div>
+        <!-- Achievement 5 -->
+        <div class="achievement-item">
+          <img src="img/c g.png" alt="C Certification">
+          <p>C Certification from Sololearn</p>
+        </div>
+        <!-- Achievement 6 -->
+        <div class="achievement-item">
+          <img src="img/parcipation.jpg" alt="Hackathon Achievement">
+          <p>First Place in Hanga Hubs Hackathon 2024 (Software Development Category)</p>
+        </div>
+        <!-- Achievement 7 -->
+        <div class="achievement-item">
+          <img src="img/completion.jpg" alt="Training Completion">
+          <p>Completed Hanga Hub Software Development Training</p>
+        </div>
+        <!-- Additional Achievement Example -->
+        <!-- <div class="achievement-item">
+          <img src="img/react_cert.jpg" alt="React Certification">
+          <p>React Certification from Codecademy</p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
